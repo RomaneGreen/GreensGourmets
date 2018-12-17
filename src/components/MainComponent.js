@@ -13,6 +13,7 @@ import { DISHES } from '../shared/dishes';
     };
   }
    onDishSelect(dishId) {
+    console.log('dishId', dishId)
     this.setState({ selectedDish: dishId});
   }
    render() {
