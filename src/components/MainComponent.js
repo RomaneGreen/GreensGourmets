@@ -61,5 +61,5 @@ import { DISHES } from '../shared/dishes';
         </div>
     );
   }
-}
+ }
  export default Main;
