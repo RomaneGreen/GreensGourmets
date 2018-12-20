@@ -11,7 +11,7 @@ export const LEADERS = [
     {
       id: 1,
       name: 'KG Witherspoon',
-      image: '/assets/images/alberto.png',
+      image: '/assets/images/cheesecake.png',
       designation: 'Chief Food Officer',
       abbr: 'CFO',
         featured: false,
