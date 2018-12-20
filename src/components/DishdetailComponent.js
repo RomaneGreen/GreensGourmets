@@ -15,9 +15,11 @@ const minLength = (len) => (val) => val && (val.length >= len);
         if (dish != null)
             return(
                 <Card>
-                    <CardImg top src={dish.image} alt={dish.name} />
+                    <CardImg top src={dish.image} alt={dish.author
+                    } />
                     <CardBody>
-                      <CardTitle>{dish.name}</CardTitle>
+                      <CardTitle>{dish.author
+                    }</CardTitle>
                       <CardText>{dish.description}</CardText>
                     </CardBody>
                 </Card>
@@ -27,7 +29,7 @@ const minLength = (len) => (val) => val && (val.length >= len);
                 <div></div>
             );
             }
-        function RenderComments({comments}) {
+        function RenderComments({comments,addComment, dishId}) {
                 if (comments != null) {
                 let commentList = comments.map((comment)=>{ 
                     return (
@@ -43,7 +45,7 @@ const minLength = (len) => (val) => val && (val.length >= len);
             <React.Fragment>
                 <h3>Comments</h3>
                 {commentList}
-                <CommentForm/>
+                <CommentForm  dishId={dishId} addComment={addComment} />
             </React.Fragment>
          );
      }
@@ -62,10 +64,12 @@ const minLength = (len) => (val) => val && (val.length >= len);
         <Breadcrumb>
 
     <BreadcrumbItem><Link to="/menu">Menu</Link></BreadcrumbItem>
-    <BreadcrumbItem active>{props.dish.name}</BreadcrumbItem>
+    <BreadcrumbItem active>{props.dish.author
+    }</BreadcrumbItem>
     </Breadcrumb>
     <div className="col-12">
-    <h3>{props.dish.name}</h3>
+    <h3>{props.dish.author
+    }</h3>
     <hr />
     </div>                
     </div>
@@ -75,7 +79,10 @@ const minLength = (len) => (val) => val && (val.length >= len);
             </div>
            
             <div  className="col-12 col-md-5 m-1">
-            <RenderComments comments={props.comments}/>
+            <RenderComments comments={props.comments}
+                 addComment={props.addComment}
+                 dishId={props.dish.id}
+            />
                 </div>
             </div>
          </div>
@@ -105,6 +112,7 @@ const minLength = (len) => (val) => val && (val.length >= len);
           this.toggleModal();
           console.log('Current State is: ' + JSON.stringify(values));
           alert('Current State is: ' + JSON.stringify(values));
+          this.props.addComment(this.props.dishId, values.rating, values.author, values.Comment);
       }
         render() {
           return (
@@ -117,7 +125,8 @@ const minLength = (len) => (val) => val && (val.length >= len);
                       <Row className="form-group">
                                   <Label htmlFor="rating" md={2}>Rating</Label>
                                   <Col md={10}>
-                                      <Control.select model=".rating" name="Rating"
+                                      <Control.select model=".rating" author
+                                      ="Rating"
                                           className="form-control">
                                           <option>1</option>
                                           <option>2</option>
@@ -128,9 +137,14 @@ const minLength = (len) => (val) => val && (val.length >= len);
                                   </Col>
                               </Row>
                       <Row className="form-group">
-                                  <Label htmlFor="name" md={2}>Your Name</Label>
+                                  <Label htmlFor="author
+                                  " md={2}>Your Name</Label>
                                   <Col md={10}>
-                                      <Control.text model=".name" id="name" name="name"
+                                      <Control.text model=".author
+                                      " id="author
+                                      " author
+                                      ="author
+                                      "
                                           placeholder="Your Name"
                                           className="form-control"
                                           validators={{
@@ -139,7 +153,8 @@ const minLength = (len) => (val) => val && (val.length >= len);
                                               />
                                       <Errors
                                           className="text-danger"
-                                          model=".name"
+                                          model=".author
+                                          "
                                           show="touched"
                                           messages={{
                                               required: 'Required',
@@ -152,7 +167,8 @@ const minLength = (len) => (val) => val && (val.length >= len);
                               <Row className="form-group">
                                   <Label htmlFor="Comment" md={2}>Comment</Label>
                                   <Col md={10}>
-                                      <Control.textarea model=".Comment" id="Comment" name="Comment"
+                                      <Control.textarea model=".Comment" id="Comment" author
+                                      ="Comment"
                                           rows="6"
                                           className="form-control" />
                                   </Col>
