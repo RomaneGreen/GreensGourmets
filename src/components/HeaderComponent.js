@@ -55,7 +55,7 @@ class Header extends Component {
                             </Nav>
                             <Nav className="ml-auto" navbar>
                                 <NavItem>
-                                    {/* <Button outline onClick={this.toggleModal}><span className="fa fa-sign-in fa-lg"></span> Login</Button> */}
+                                   
                                     <li><a href="https://www.greensgourments.com">Greens's Gourmets Online!</a></li>
                                 </NavItem>
                             </Nav>
