@@ -1,4 +1,4 @@
-GREENS GOURMENT
+GREENS GOURMET
 ===========
 
 Health food restaurant using react,redux,node and express
