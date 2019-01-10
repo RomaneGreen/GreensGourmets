@@ -12,11 +12,11 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-      <HashRouter>
+      <BrowserRouter>
       <div className="App">
                 <Main />
       </div>
-      </HashRouter>
+      </BrowserRouter>
       </Provider>
     );
   }
