@@ -2,9 +2,11 @@ import React from 'react';
 import { Loading } from './LoadingComponent';
 import { Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle} from 'reactstrap';
+  import { FadeTransform } from 'react-animation-components';
 
   function RenderCard({item, isLoading, errMess}) {
 
+    console.log(item)
     if (isLoading) {
         return(
                 <Loading />
@@ -17,6 +19,11 @@ import { Card, CardImg, CardText, CardBody,
     }
     else 
         return(
+            <FadeTransform
+            in
+            transformProps={{
+                exitTransform: 'scale(0.5) translateY(-50%)'
+            }}>
             <Card>
                 <CardImg src={item.image} alt={item.name} />
                 <CardBody>
@@ -25,6 +32,7 @@ import { Card, CardImg, CardText, CardBody,
                 <CardText>{item.description}</CardText>
                 </CardBody>
             </Card>
+            </FadeTransform>
         );
 
 }
@@ -38,7 +46,7 @@ import { Card, CardImg, CardText, CardBody,
                 <RenderCard item={props.dish} isLoading={props.dishesLoading} errMess={props.dishesErrMess}  />
                 </div>
                 <div className="col-12 col-md m-1">
-                    <RenderCard item={props.promotion} />
+                <RenderCard item={props.promotion} isLoading={props.promoLoading} errMess={props.promoErrMess} />
                 </div>
                 <div className="col-12 col-md m-1">
                     <RenderCard item={props.leader} />

@@ -5,7 +5,7 @@ import { Dishes } from './dishes';
 import { Promotions } from './promotions';
 import { Comments } from './comments';
 import { Leaders } from './leaders';
-import { createForms, initialFieldState } from 'react-redux-form';
+import { createForms } from 'react-redux-form';
 import { InitialFeedback } from './forms';
 
 export const ConfigureStore = () =>{
