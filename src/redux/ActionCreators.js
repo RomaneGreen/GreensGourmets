@@ -43,7 +43,7 @@ export const fetchPromos = () => (dispatch) => {
 }
 
 export const commentsLoading = () => ({
-    type: ActionTypes.DISHES_LOADING
+    type: ActionTypes.COMMENTS_LOADING
 });
 
 export const commentsFailed = (errmess) => ({
@@ -51,9 +51,9 @@ export const commentsFailed = (errmess) => ({
     payload: errmess
 });
 
-export const addComments = (dishes) => ({
+export const addComments = (comments) => ({
     type: ActionTypes.ADD_COMMENTS,
-    payload: dishes
+    payload: comments
 });
 
 export const dishesLoading = () => ({
