@@ -9,6 +9,7 @@ import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import Menu from './MenuComponent';
 import DishDetail from './DishdetailComponent';
 import { addComment, fetchDishes } from '../redux/ActionCreators';
+import { actions } from 'react-redux-form';
 
 
 
@@ -57,7 +58,7 @@ import { addComment, fetchDishes } from '../redux/ActionCreators';
             <Route exact path='/menu' component={() => <Menu dishes={this.props.dishes} />} />
             <Route path='/menu/:dishId' component={DishWithId} />
             <Route exact path='/aboutus' component={() => <About leaders={this.props.leaders} />} />
-            <Route exact path='/contactus' component={Contact} />} />
+            <Route exact path='/contactus' component={() => <Contact resetFeedbackForm={this.props.resetFeedbackForm} />} />
             <Redirect to="/home" />
         </Switch>
         <Footer />
@@ -74,6 +75,7 @@ import { addComment, fetchDishes } from '../redux/ActionCreators';
 })
 const mapDispatchToProps = dispatch => ({
   fetchDishes: () => { dispatch(fetchDishes())},
-  addComment: (dishId, rating, author, comment) => dispatch(addComment(dishId, rating, author, comment))
+  addComment: (dishId, rating, author, comment) => dispatch(addComment(dishId, rating, author, comment)),
+  resetFeedbackForm:()=>{dispatch(actions.reset('feedback'))}
 });
-export default withRouter(connect(mapStateToProps)(Main));
+export default withRouter(connect(mapStateToProps,mapDispatchToProps)(Main));
