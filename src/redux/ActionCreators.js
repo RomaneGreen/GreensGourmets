@@ -3,6 +3,8 @@ import * as ActionTypes from './ActionTypes';
 import { DISHES } from '../shared/dishes';
 import { COMMENTS } from '../shared/comments';
 import { PROMOTIONS } from '../shared/promotions';
+import { LEADERS } from '../shared/leaders';
+
 
 export const postComment = (dishId, rating, author, comment) => ({
     type: ActionTypes.ADD_COMMENT,
@@ -39,6 +41,15 @@ export const fetchPromos = () => (dispatch) => {
 
     setTimeout(() => {
         dispatch(addPromos(PROMOTIONS));
+    }, 2000);
+}
+
+export const fetchLeaders = () => (dispatch) => {
+
+    dispatch(leadersLoading(true));
+
+    setTimeout(() => {
+        dispatch(addLeaders(LEADERS));
     }, 2000);
 }
 
@@ -85,6 +96,20 @@ export const addPromos = (promos) => ({
     payload: promos
 });
 
+
+export const leadersLoading = () => ({
+    type: ActionTypes.LEADERS_LOADING
+});
+
+export const leadersFailed = (errmess) => ({
+    type: ActionTypes.LEADERS_FAILED,
+    payload: errmess
+});
+
+export const addLeaders = (leaders) => ({
+    type: ActionTypes.ADD_LEADERS,
+    payload: leaders
+});
 // import * as ActionTypes from './ActionTypes';
 
 // export const addComment = (comment) => ({

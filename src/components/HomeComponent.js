@@ -4,9 +4,20 @@ import { Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle} from 'reactstrap';
   import { FadeTransform } from 'react-animation-components';
 
+  const CardImgFixHeight = {
+    height: '20rem',
+    minHeight: '20rem',
+    maxHeight: '20rem'
+}
+const cardImgFix15 = {
+    height: '15rem',
+    minHeight: '15rem',
+    maxHeight: '15rem'
+}
+
   function RenderCard({item, isLoading, errMess}) {
 
-    console.log(item)
+    
     if (isLoading) {
         return(
                 <Loading />
@@ -25,8 +36,8 @@ import { Card, CardImg, CardText, CardBody,
                 exitTransform: 'scale(0.5) translateY(-50%)'
             }}>
             <Card>
-                <CardImg src={item.image} alt={item.name} />
-                <CardBody>
+                <CardImg style={CardImgFixHeight} src={item.image} alt={item.name} />
+                <CardBody style={cardImgFix15}>
                 <CardTitle>{item.name}</CardTitle>
                 {item.designation ? <CardSubtitle>{item.designation}</CardSubtitle> : null }
                 <CardText>{item.description}</CardText>
@@ -49,7 +60,8 @@ import { Card, CardImg, CardText, CardBody,
                 <RenderCard item={props.promotion} isLoading={props.promoLoading} errMess={props.promoErrMess} />
                 </div>
                 <div className="col-12 col-md m-1">
-                    <RenderCard item={props.leader} />
+                    
+                    <RenderCard item={props.leader} isLoading={props.leaderLoading} errMess={props.leaderErrMess} />
                 </div>
             </div>
         </div>

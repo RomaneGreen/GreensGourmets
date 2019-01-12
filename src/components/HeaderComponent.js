@@ -3,6 +3,15 @@ import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron,B
     Form, FormGroup, Input, Label } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 
+
+const bannerImg = {
+    backgroundSize: '100%',
+    backgroundImage: 'url(assets/images/testA.gif)',
+    height: '25rem',
+    color: 'azure',
+    paddingTop: '1rem'
+  };
+
 class Header extends Component {
     constructor(props) {
         super(props);
@@ -35,7 +44,7 @@ class Header extends Component {
         return(
             <div>
                 <Navbar dark expand="md">
-                    <div className="container">
+                    <div className="container-fluid">
                         <NavbarToggler onClick={this.toggleNav} />
                         <NavbarBrand className="mr-auto" href="/"><img src='assets/images/logo.png' height="30" width="41" alt='Greens Gourmet' /></NavbarBrand>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
@@ -62,8 +71,9 @@ class Header extends Component {
                         </Collapse>
                     </div>
                 </Navbar>
-                <Jumbotron>
-                    <div className="container">
+                   {/* <Jumbotron> */} 
+                   <div style={bannerImg}>
+                    <div className="container-fluid">
                         <div className="row row-header">
                             <div className="col-12 col-sm-6">
                                 <h1>Greens Gourmet</h1>
@@ -71,7 +81,9 @@ class Header extends Component {
                             </div>
                         </div>
                     </div>
-                </Jumbotron>
+               
+                </div>
+                {/* </Jumbotron> */}
                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
                     <ModalHeader toggle={this.toggleModal}>Login</ModalHeader>
                     <ModalBody>
