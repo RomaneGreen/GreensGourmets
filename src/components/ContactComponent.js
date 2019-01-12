@@ -3,11 +3,16 @@ import { Breadcrumb, BreadcrumbItem,
     Button, Row, Col, Label } from 'reactstrap';
 import { Control, Form, Errors} from 'react-redux-form';
 import { Link } from 'react-router-dom';
+
+
+
 const required = (val) => val && val.length;
 const maxLength = (len) => (val) => !(val) || (val.length <= len);
 const minLength = (len) => (val) => val && (val.length >= len);
 const isNumber = (val) => !isNaN(Number(val));
 const validEmail = (val) => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
+
+
 class Contact extends Component {
     constructor(props) {
         super(props);
@@ -31,7 +36,7 @@ class Contact extends Component {
         <div className="container">
         <div className="row">
                 <Breadcrumb>
-                    <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
+                    <BreadcrumbItem><Link to="/">Home</Link></BreadcrumbItem>
                     <BreadcrumbItem active>Contact Us</BreadcrumbItem>
                 </Breadcrumb>
                 <div className="col-12">
@@ -64,8 +69,10 @@ class Contact extends Component {
                             <a role="button" className="btn btn-success" href="mailto:confusion@food.net"><i className="fa fa-envelope-o"></i> Email</a>
                         </div>
                     </div>
+                    
+
                 </div>
-                <div className="col-6">
+                {/* <div className="col-6">
                     <h3>Send us your Feedback</h3>
                    
                  
@@ -193,11 +200,11 @@ class Contact extends Component {
                                 </Col>
                             </Row>
                         </Form>
-                    </div>
-               
-               
+    
+        </div> */}
         </div>
         )};
 }
+
 
 export default Contact;
