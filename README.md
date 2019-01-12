@@ -1,7 +1,9 @@
 GREENS GOURMET
 ===========
 
-Health food restaurant using react,redux,node and express
+http://www.greensgourmets.com 
+
+Health food restaurant using react and redux + an online store which utilizes gatsby and graphql.
 
 
 
