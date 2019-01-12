@@ -70,3 +70,12 @@
     color: whitesmoke;
     text-decoration: none;
   }
+
+  .maintext {
+    color: black;
+    opacity: 0.5;
+  }
+  .mainheader {
+    color: black;
+    opacity: 0.6;
+  }

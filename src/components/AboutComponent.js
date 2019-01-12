@@ -58,8 +58,8 @@ function About(props) {
             <div className="row row-content">
                 <div className="col-12 col-md-6">
                     <h2>Our History</h2>
-                    <p>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong.  Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
-                    <p>The restaurant traces its humble beginnings to <em>The Frying Pan</em>, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>
+                    <p>Started in 2013, Greens Gourmet quickly established itself as a culinary icon in the health food industry. With its unique brand of world health food based cuisine that can be found nowhere else, it enjoys patronage a steady niche clientele. Featuring four of the best chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
+                    <p>The restaurant traces its humble beginnings to <em>The Green Garden</em>, a successful chain started by our CEO, Mr. Peter Greene, that featured for the first time in <em>Dining for health weekly</em>  </p>
                 </div>
                 <div className="col-12 col-md-5">
                     <Card>
@@ -69,11 +69,11 @@ function About(props) {
                                 <dt className="col-6">Started</dt>
                                 <dd className="col-6">3 Feb. 2013</dd>
                                 <dt className="col-6">Major Stake Holder</dt>
-                                <dd className="col-6">HK Fine Foods Inc.</dd>
+                                <dd className="col-6">RI Famous Foods Inc.</dd>
                                 <dt className="col-6">Last Year's Turnover</dt>
-                                <dd className="col-6">$1,250,375</dd>
+                                <dd className="col-6">$350,375</dd>
                                 <dt className="col-6">Employees</dt>
-                                <dd className="col-6">40</dd>
+                                <dd className="col-6">14</dd>
                             </dl>
                         </CardBody>
                     </Card>
@@ -82,11 +82,11 @@ function About(props) {
                     <Card>
                         <CardBody className="bg-faded">
                             <blockquote className="blockquote">
-                                <p className="mb-0">You better cut the pizza in four pieces because
-                                    I'm not hungry enough to eat six.</p>
-                                <footer className="blockquote-footer">Yogi Berra,
-                                <cite title="Source Title">The Wit and Wisdom of Yogi Berra,
-                                    P. Pepe, Diversion Books, 2014</cite>
+                                <p className="mb-0">Let food be thy medicine and medicine be thy food.
+                                    </p>
+                                <footer className="blockquote-footer">Hippocrates,
+                                <cite title="Source Title"> 460 B.C.
+                                    </cite>
                                 </footer>
                             </blockquote>
                         </CardBody>

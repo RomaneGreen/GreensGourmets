@@ -22,10 +22,10 @@ function Footer(props) {
 		              1898 Helton st<br />
 		              Brooklyn,NY<br />
 		              NEW YORK<br />
-		              <i className="fa fa-phone fa-lg"></i>: +852 1234 5678<br />
-		              <i className="fa fa-fax fa-lg"></i>: +852 8765 4321<br />
-		              <i className="fa fa-envelope fa-lg"></i>: <a href="mailto:greensgourmet@gmail.com">
-                         greensgourmet@gmail.com</a>
+		              <i className="fa fa-phone fa-lg"></i>: ++347 943 2451<br />
+		              <i className="fa fa-fax fa-lg"></i>: ++347 943 2451<br />
+		              <i className="fa fa-envelope fa-lg"></i>: <a href="mailto:greensgourmetone@gmail.com">
+                         greensgourmetone@gmail.com</a>
                     </address>
                 </div>
                 <div className="col-12 col-sm-4 align-self-center">
@@ -35,7 +35,7 @@ function Footer(props) {
                         <a className="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/"><i className="fa fa-linkedin"></i></a>
                         <a className="btn btn-social-icon btn-twitter" href="https://twitter.com/"><i className="fa fa-twitter"></i></a>
                         <a className="btn btn-social-icon btn-google" href="https://youtube.com/"><i className="fa fa-youtube"></i></a>
-                        <a className="btn btn-social-icon" href="mailto:"><i className="fa fa-envelope-o"></i></a>
+                        {/* <a className="btn btn-social-icon" href="mailto:"><i className="fa fa-envelope-o"></i></a> */}
                     </div>
                 </div>
             </div>

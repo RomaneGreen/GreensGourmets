@@ -76,8 +76,8 @@ class Header extends Component {
                     <div className="container-fluid">
                         <div className="row row-header">
                             <div className="col-12 col-sm-6">
-                                <h1>Greens Gourmet</h1>
-                                <p>We take inspiration from the World's best cuisines, and create a unique healty experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                                <h1 className = "mainheader">Green's Gourmet</h1>
+                                <p className = "maintext">We take inspiration from the World's most nutritious cuisines, and create a unique healthy experience. Our lipsmacking creations will tickle your culinary senses,while nourishing your mind body and soul!</p>
                             </div>
                         </div>
                     </div>
