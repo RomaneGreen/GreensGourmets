@@ -45,7 +45,7 @@ const minLength = (len) => (val) => val && (val.length >= len);
                              <Fade in key={comment.id}>
                              <li>
                             <p>{comment.comment}</p>
-                            <p>-- {comment.author} , {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))}</p>
+                            <p>-- {comment.author}, {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))} </p>
                             </li>
                             </Fade>
                         );
