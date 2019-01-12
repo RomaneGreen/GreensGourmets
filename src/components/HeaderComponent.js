@@ -46,7 +46,7 @@ class Header extends Component {
                 <Navbar dark expand="md">
                     <div className="container-fluid">
                         <NavbarToggler onClick={this.toggleNav} />
-                        <NavbarBrand className="mr-auto" href="/"><img src='assets/images/logo.png' height="30" width="41" alt='Greens Gourmet' /></NavbarBrand>
+                        {/* <NavbarBrand className="mr-auto" href="/"><img src='assets/images/logo.png' height="30" width="41" alt='Greens Gourmet' /></NavbarBrand> */}
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>
                             <NavItem>
@@ -65,7 +65,7 @@ class Header extends Component {
                             <Nav className="ml-auto" navbar>
                                 <NavItem>
                                    
-                                    <li><a href="https://www.greensgourments.com">Greens's Gourmets Online!</a></li>
+                                    <li className="nav-link"><span className="fa fa-shopping-cart fa-lg"></span><a  className="links" href="https://www.greensgourments.com"> Shop Online!</a> </li>
                                 </NavItem>
                             </Nav>
                         </Collapse>
