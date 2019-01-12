@@ -1,8 +1,8 @@
 export const LEADERS = [
     {
       id: 0,
-      name: 'Peter Popper',
-      image: '/assets/images/alberto.png',
+      name: 'Peter Greene',
+      image: '/assets/images/reave.jpg',
       designation: 'Chief Epicurious Officer',
       abbr: 'CEO',
       featured: false,
@@ -10,8 +10,8 @@ export const LEADERS = [
     },
     {
       id: 1,
-      name: 'KG Witherspoon',
-      image: '/assets/images/cheesecake.png',
+      name: 'Kraig Witherspoon',
+      image: '/assets/images/ronny.jpg',
       designation: 'Chief Food Officer',
       abbr: 'CFO',
         featured: false,
@@ -19,8 +19,8 @@ export const LEADERS = [
     },
     {
       id: 2,
-      name: 'Super Tang',
-      image: '/assets/images/alberto.png',
+      name: 'Jennify Jacobs',
+      image: '/assets/images/jenny.jpeg',
       designation: 'Chief Taste Officer',
       abbr: 'CTO',
         featured: false,
