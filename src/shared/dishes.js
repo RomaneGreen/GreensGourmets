@@ -2,43 +2,43 @@ export const DISHES = [
     
                         {
                           id: 0,
-                          name:'Whole Wheat Pizza',
-                          image: '/assets/images/wholewheatpizza.JPG',
+                          name:'Duck Bowl',
+                          image: '/assets/images/beefbowl.JPG',
                           category: 'mains',
                           label:'Hot',
-                          price:'4.99',
+                          price:'14.99',
                           featured: true,
-                          description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives'
+                          description:'Glazed duck,organic brown rice with a peach kale combo'
                         },
                        {
                           id: 1,
-                          name:'Chickpea Stew',
-                          image: '/assets/images/chickpeastew.jpg',
+                          name:'Salmon Square',
+                          image: '/assets/images/salmonsquare.jpg',
                           category: 'appetizer',
                           label:'',
-                          price:'1.99',
+                          price:'14.99',
                           featured: false,
-                          description:'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce'
+                          description:'Grilled Salmon,sauteed reiki mushrooms,cucumber red cabbage twist'
                           },        
                        {
                           id: 2,
-                          name:' Apple Cinnamon Low carb donuts',
-                          image: '/assets/images/lowcarbdonuts.jpg',
+                          name:'Chicken Square',
+                          image: '/assets/images/chickensquare.jpg',
                           category: 'appetizer',
                           label:'New',
-                          price:'1.99',
+                          price:'14.99',
                           featured: false,
-                          description:'A quintessential ConFusion experience, is it a vada or is it a donut?'
+                          description:'Grilled chicken made from hormone free,vegetarian fed cage-free chickens, with a side salad.'
                         },                       
                        {
                           id: 3,
-                          name:'Chocolate Vegan Low carb Cheesecake',
-                          image: '/assets/images/cheesecake.jpeg',
+                          name:'Egg Bowl',
+                          image: '/assets/images/eggsquare.jpg',
                           category: 'dessert',
                           label:'',
-                          price:'2.99',
+                          price:'12.99',
                           featured: false,
-        description:'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms'
+        description:'Eggs, avocados,rice and beans with broccoli plus cucumber.'
         }
     
   ]; 
