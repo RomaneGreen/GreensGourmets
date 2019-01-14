@@ -49,11 +49,11 @@ class Contact extends Component {
                 <h3>Location Information</h3>
                 </div>
                 <div className="col-12 col-sm-4 offset-sm-1"> */}
-                <div className="col-6">
+                <div className="col-6 addy">
                     <h3>Location Information</h3>
-                    <div className="col-12"></div>
+                    <div className="col-12">
                         <h5>Our Address</h5>
-                        <address>
+                        <address className="addy">
                         1898, Helton St<br />
                         Brooklyn,NY<br />
                         NEW YORK<br />
@@ -61,7 +61,7 @@ class Contact extends Component {
                         <i className="fa fa-fax"></i>: +347 943 2451<br />
                         <i className="fa fa-envelope"></i>: <a href="mailto:confusion@food.net">greensgourmetone@gmail.com</a>
                         </address>
-                        </div>
+                        </div></div>
                     <div className="col-12">
                         <div className="btn-group" role="group">
                             <a role="button" className="btn btn-primary" href="tel:+85212345678"><i className="fa fa-phone"></i> Call</a>

@@ -6,10 +6,11 @@ import { NavLink } from 'react-router-dom';
 
 const bannerImg = {
     backgroundSize: '100%',
-    backgroundImage: 'url(assets/images/testA.gif)',
+    backgroundImage: 'url(assets/images/healththree.jpeg)',
     height: '25rem',
-    color: 'azure',
-    paddingTop: '1rem'
+    // color: 'azure',
+    paddingTop: '1rem',
+    // opacity: '0.7'
   };
 
 class Header extends Component {
