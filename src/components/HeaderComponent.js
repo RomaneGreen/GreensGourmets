@@ -7,6 +7,7 @@ import { NavLink } from 'react-router-dom';
 const bannerImg = {
     backgroundSize: '100%',
     backgroundImage: 'url(assets/images/healththree.jpeg)',
+    backgroundRepeat: 'none',
     height: '25rem',
     // color: 'azure',
     paddingTop: '1rem',

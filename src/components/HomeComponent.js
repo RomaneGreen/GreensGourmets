@@ -20,7 +20,8 @@ const cardImgFix15 = {
     
     if (isLoading) {
         return(
-                <Loading />
+                 <Loading />
+                
         );
     }
     else if (errMess) {
@@ -43,7 +44,7 @@ const cardImgFix15 = {
                 <CardText>{item.description}</CardText>
                 </CardBody>
             </Card>
-            </FadeTransform>
+             </FadeTransform>
         );
 
 }
